@@ -1,0 +1,13 @@
+body,html{
+    height: 100%;
+    margin: 0%;
+    font-family: 'Abel', sans-serif;
+
+}
+.graphics{
+    background-image: url("istockphoto12.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}

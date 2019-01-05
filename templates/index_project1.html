@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+
+{% block body %}
+{% if session['logged_in'] %} 
+    <p>You're logged in already!</p>
+{% else %}
+        <form action="/login" method="POST" id="form">
+            <div class="login">
+                <h1>Login</h1>
+                    <label  for="email">Email</label><br>
+                        <input  type="email"  name="email_address" placeholder="Enter Email"><br>
+                    <label for="pwd">Password</label><br>
+                        <input type="password" name="pwd" placeholder="Enter Password"><br>
+                        <input type="checkbox" name="remember" id="remember">
+                    <label for="remember">Remember Password</label>
+                    <p class="p-container">
+                            <span>Forgot password ?</span>
+                            <input type="submit" name="go" id="go" value="Login">
+                          </p>
+            </div>
+
+            
+
+        </form> 
+        {% endif %}
+        <p>Create new account. <a href='/signup'>SIGNUP</a></p>
+
+    
+{% endblock %}

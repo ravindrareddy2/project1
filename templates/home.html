@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+
+
+    {% block body %}
+    {% block anchor %}
+        <ul>
+            <li>
+                    <a class="nav-link" href="{{ url_for('logout')}}">
+                            Logout <strong>{{ "user_email" }}</strong>
+                        </a>
+            </li>
+        </ul>    
+   {% endblock %}
+        <div class="home_search" >
+            <form action="/bookresult" method="POST">
+            <label for="name">Enter ISBN Number</label><br>
+            <input type="search" name="book_search" id="isbn_search"  placeholder="ISBN number"><br>
+            <label for="name">Enter Title Of The Book</label><br>
+            <input type="search" name="book_search" id="title_search" placeholder="Title"><br>
+            <label for="name">Enter The Author of the Book</label><br>
+            <input type="search" name="book_search" id="author_search" placeholder="Author"><br>
+            <label for="name">Enter The Year of the Book</label><br>
+            <input type="search" name="book_search" id="year_search" placeholder="Year"><br>
+            <input type="submit" name="query" value="Search">
+            </form>
+
+        </div>
+    {% endblock %}
