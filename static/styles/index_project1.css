@@ -6,19 +6,30 @@ body,html{
 }
 .graphics{
     background-image: url("istockphoto12.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 100%;
 }
 .login{
-    margin: 0% ;
-    padding: 2.5% ;   
+    padding: 5%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
     display: inline-block;
     border-color: blue;
-    background: transparent;
+    background: whitesmoke;
     width: 20%;    
 }  
 .signup{
-    margin: 0%;
-    padding: 1%;
+    padding: 5%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
     display: block;
     background: whitesmoke;
     width: 20%;
@@ -28,7 +39,7 @@ body,html{
     padding: 2.5% ;   
     display: inline-block;
     border-color: blue;
-    background: transparent;
+    background: whitesmoke;
     width: 20%;
 }
 
@@ -38,33 +49,33 @@ input[type=password],
 input[type=search] {
     width:100%;
     padding:8px 5px;
-    background:transparent;
+    background:whitesmoke;
     border:1px solid #222;
     box-shadow:0 1px 0 rgba(255,255,255,0.1);
     border-radius:0.3em;
     margin-bottom:20px;
 }
 label[for=remember]{
-    color:white;
+    color:black;
     display:inline-block;
     padding-bottom:0;
     padding-top:5px;
 }
 label[for=email]{
-    color: white;
+    color: black;
     display: inline-block ;
     padding-bottom: 0%;
     padding-top: 5px;
 
 }
 label[for=pwd]{
-    color: white;
+    color: black;
     display: inline-block ;
     padding-bottom: 0%;
     padding-top: 5px;
 }
 label[for=name]{
-    color: white;
+    color: black;
     display: inline-block ;
     padding-bottom: 0%;
     padding-top: 5px;
